@@ -1,0 +1,85 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-image: url("../static/Teacher-Teaching-Kids-During-School-Graphics-3861982-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main {
+    border-bottom:0.5rem solid rgba(0, 191, 255, 1) ;
+    border-radius: 3rem;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: inset 5px 8px 48px rgba(255, 255, 255, 0.95);
+    /* background: linear-gradient(125deg, #cacaca, #f0f0f0);
+    box-shadow:  -20px -20px 48px #bebebe90,
+                20px 20px 48px #ffffff90; */
+}
+
+/*----------------------------------------------------_Navigation_-----------------------------------------*/
+.nav {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2%;
+    z-index: 2;
+    transition: all 500ms 0ms ease-in-out;
+    animation: float-in 0.75s 1 ease-in;
+}
+
+@keyframes float-in {
+    0% {
+        bottom: -1.5rem;
+        opacity: 0;
+    }
+    50% {
+        bottom: 1.5rem;
+        opacity: 0.5;
+    }
+    100% {
+        bottom: 0.45rem;
+        opacity: 1;
+    }
+}
+
+.nav_buttons a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.nav_buttons i{
+    font-size: 1.75rem;
+    opacity: 0.75;
+    transition: all 200ms 0ms ease-in-out;
+}
+
+.hidden-element { 
+    font-size: 0.65rem;
+    opacity: 0.75;
+    transition: all 200ms 0ms ease-in-out;
+}
+
+.nav_buttons:hover i{
+    opacity: 1;
+    color: deepskyblue;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.nav_buttons:hover i + .hidden-element { 
+    opacity: 1;
+    display: inline-block;
+    color: deepskyblue;
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: -3px 2.5px 5px rgba(0, 0, 0, 0.34);
+    cursor: pointer;
+}
