@@ -62,6 +62,21 @@ cd mscs
 pip install -r requirements.txt
 ```
 
+### 2.1. Create a Virtual Environment
+Before installing dependencies, create and activate a virtual environment:
+
+```bash
+# On Windows
+type python -m venv venv
+.\venv\Scripts\activate
+
+# On macOS/Linux
+type python3 -m venv venv
+source venv/bin/activate
+```
+
+This ensures that dependencies are installed in an isolated environment.
+
 ### 3. Configure Database
 - Create a MySQL database named `mscs`.
 - Import the SQL files located in the `static` folder:
